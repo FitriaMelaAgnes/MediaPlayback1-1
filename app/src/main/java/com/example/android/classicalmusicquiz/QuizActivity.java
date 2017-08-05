@@ -26,6 +26,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
@@ -90,6 +91,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         mButtons = initializeButtons(mQuestionSampleIDs);
 
         // TODO (4): Create a Sample object using the Sample.getSampleByID() method and passing in mAnswerSampleID;
+        Sample answerSample = Sample.getSampleByID(this, mAnswerSampleID);
+        if (answerSample == null) {
+            Toast.makeText(this, getString(R.string.sample_list_load_error),
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
         // TODO (5): Create a method called initializePlayer() that takes a Uri as an argument and call it here, passing in the Sample URI.
 
     }
