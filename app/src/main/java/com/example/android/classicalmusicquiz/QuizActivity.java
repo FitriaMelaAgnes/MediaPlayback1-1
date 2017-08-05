@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
@@ -98,6 +99,11 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         // TODO (5): Create a method called initializePlayer() that takes a Uri as an argument and call it here, passing in the Sample URI.
+
+        initializePlayer(Uri.parse(answerSample.getUri()));
+    }
+
+    private void initializePlayer(Uri parse) {
 
     }
 
