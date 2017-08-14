@@ -1,7 +1,7 @@
 # MediaPlayback1
 
 Link<br>
-[download apk](https://drive.google.com/uc?export=download&id=0B8XRN0Oti9i4M1VYc1ZkeTc4MWc)
+[download apk](https://drive.google.com/open?id=0Bz0buv_x413HSWxCUy1yS3ktR0k)
 
 ## Identitas
 - Nama : Ladinar Nanda Aprlia
